@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff7fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(to right, #ff8eb3, #ffa6c9);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5em;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ffe9f1;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section:nth-child(even) {
+  background-color: #ffe9f1;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #d63384;
+}
+
+p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  font-size: 1.1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.galeria img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+#whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 28px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+#whatsapp-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #ff8eb3;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-weight: 300;
+}
